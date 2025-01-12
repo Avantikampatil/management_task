@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-31 10:58:59.643548",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_expr",
+  "title",
+  "autocomplete_fdwr",
+  "priority",
+  "due_date",
+  "tags",
+  "assigned_to",
+  "status",
+  "comments",
+  "attachments",
+  "created_by",
+  "last_modified",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_expr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "autocomplete_fdwr",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Text",
+   "label": "Tags"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Data",
+   "label": "Assigned To"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nIn Progress\nCompleted."
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Autocomplete",
+   "label": "Created By"
+  },
+  {
+   "fieldname": "last_modified",
+   "fieldtype": "Autocomplete",
+   "label": "Last Modified"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Task_M",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-31 12:04:14.384945",
+ "modified_by": "Administrator",
+ "module": "Management Task",
+ "name": "Task_M",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

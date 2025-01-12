@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:issue_name",
+ "creation": "2025-01-05 17:26:20.751079",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "issue_name",
+  "assigned_to",
+  "status",
+  "column_break_dxfw",
+  "project",
+  "issue_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "issue_name",
+   "fieldtype": "Data",
+   "label": "Issue Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_dxfw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issue_details",
+   "fieldtype": "Small Text",
+   "label": "Issue Details"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned to",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nIn Progress\nCompleted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-09 22:00:28.281029",
+ "modified_by": "Administrator",
+ "module": "Management Task",
+ "name": "Issue",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
